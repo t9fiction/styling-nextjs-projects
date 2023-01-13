@@ -1,14 +1,17 @@
-import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "./page.module.css";
-import Header from "./Header";
+import Header from "./components/Header";
+import {Pricing} from "./components/Pricing";
+import Footer from "./components/Features";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div>
+    <div className={styles.main}>
       <Header />
+      <Pricing />
+      <Footer/>
     </div>
   );
 }
