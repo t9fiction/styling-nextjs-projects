@@ -8,7 +8,7 @@ import {
 import React from "react";
 
 interface FeatureProps extends StackProps {
-  icon: ElementType;
+  icon: React.ElementType;
 }
 
 const Feature = (props: FeatureProps) => {
